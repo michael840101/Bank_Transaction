@@ -1,7 +1,7 @@
 # Bank_Transaction
-## Context 
+## Context
 
-This is a project that refact the bank account tansaction API from old framework to **NodeJS** 
+This is a project that refact the bank account tansaction API from old framework to **NodeJS**
 
 ## Structure
 
@@ -24,9 +24,9 @@ TABLE balances
 The **Balances** table represents the account balance of customers
 (ie. I have $5k in my bank account).
 
-## Functionalities 
+## Functionalities
 
 - Implemented the **/transfer** API which transfers X amount of money from account A to account B.
 - The request is be a `POST` request to the method **/transfer** with the payload: `{from:account, to:account, amount:money}`.
 - The response will return the following payload: `{id:transaction_id, from:{id:account, balance:current_balance},to:{id:account,balance:current_balance}, transfered:transfer_amount}`
-- Implemented the preventtion function that one customer might tap on the "pay/transfer" button twice by accident.
+- Implemented the function that prevent one customer might tap on the "pay/transfer" button twice by accident.
